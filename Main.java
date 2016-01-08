@@ -3,14 +3,14 @@
  * Test your code in this class
  */
 
-//import structs.*;//Uncoment after put one struct in package
+import structs.double_list.*;//Uncoment after put one struct in package
 
 public class Main{
 
     //Callback
-    public static void main(){
+    public static void main(String []argv){
         
-        //Implementation and test!
+        //Implementation and test!  
         //in this part only call test_methods
         
         testQueue();//Add parameters if you need any
@@ -50,7 +50,18 @@ public class Main{
      * put your code here to test this struct
      */
      
-     public static void testDouble_LinkedList(){}
+     public static void testDouble_LinkedList(){
+         
+         //Implementation of struct
+         Doble_LinkedList<String> A  = new Doble_LinkedList<>();
+         String [] input = {"Cadena_1","Cadena_2","Cadena_3","Cadena_4","Cadena_5",
+                            "Cadena_6","Cadena_7","Cadena_8","Cadena_9","Cadena_10",
+                            "Cadena_11","Cadena_12","Cadena_14","Cadena_15","Cadena_16"};
+         
+         System.out.println("Contenido sin datos, incial : " + A.size());
+         A.add("Hola");
+         System.out.println("Contenido con datos: " + A.size());;
+     }
      
      /**
      * Struct : Parallel Array
