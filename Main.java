@@ -3,7 +3,7 @@
  * Test your code in this class
  */
 
-import structs.*;
+//import structs.*;//Uncoment after put one struct in package
 
 public class Main{
 
