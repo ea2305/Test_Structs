@@ -73,12 +73,12 @@ public class ArbolPrueba{
           String r2 = nodo.getData();
 
           if(r1.compareTo(r2) < 0){
-            String pre = r1.remplaceAll("es el","es menor igual que el");
+            String pre = r1.replaceAll("es el","es menor igual que el");
             nodo.setData(pre);
             nodo.setPrevious(new Node<String>(r1));
             nodo.setNext(new Node<String>(r2));
           }else{
-            String pre = r2.remplaceAll("es el","es menor igual que el");
+            String pre = r2.replaceAll("es el","es menor igual que el");
             nodo.setData(pre);
             nodo.setPrevious(new Node<String>(r2));
             nodo.setNext(new Node<String>(r1));
@@ -92,8 +92,8 @@ public class ArbolPrueba{
         Arbol<String> arbol = new Arbol<String>();
         arbol.insertar("es menor igual que el 5");
         Node<String> nodo = arbol.getRaiz();
-        nodo.setPrevious(new Node<String>("es el 2"));
-        nodo.setNext(new Node<String>("es el 7"));
+        nodo.setPrevious(new Node<String>("es el 5"));
+        nodo.setNext(new Node<String>("es el Diez"));
         return arbol;
     }
 
@@ -124,6 +124,11 @@ public class ArbolPrueba{
             oos.close();
         } catch (Exception e) {
         }
+    }
+
+    public static void iniciar(){
+      System.out.println("\t *Piense en un numero");
+      jugar('s');
     }
 
     public static void main(String[] args) {

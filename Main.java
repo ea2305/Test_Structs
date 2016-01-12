@@ -110,7 +110,9 @@ public class Main{
      * Struct : Binary Tree
      * put your code here to test this struct
      */
-     public static void testBinaryTree(){}
+     public static void testBinaryTree(){
+       ArbolPrueba.iniciar();
+     }
 
      public static void menu(String[] input){
 

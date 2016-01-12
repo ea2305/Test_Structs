@@ -22,10 +22,20 @@ public class ArregloParalelo{
 
   public void visualizar(){
     for (int i=0; i<this.num; i++) {
+      System.out.print("\t"+i);
       System.out.print("\t"+this.nombre[i]);
       System.out.print("\t"+this.edad[i]);
       System.out.println("\t"+this.sexo[i]);
     }
+    System.out.println("\n\n");
+    for (int j=0; j<3 ; j++ ) {
+      int a = getPosRandom();
+      System.out.print("Usuario\t"+a);
+      System.out.print("\t"+this.nombre[a]);
+      System.out.print("\t"+this.edad[a]);
+      System.out.println("\t"+this.sexo[a]);
+    }
+    System.out.println("\n\n");
   }
 
   public void inicializar(){
@@ -36,9 +46,12 @@ public class ArregloParalelo{
     }
   }
 
+  public int getPosRandom(){
+    return (int )(Math.random() * this.listaNombres.length);
+  }
+
   public String getNombreRandom(){
-    int random = (int )(Math.random() * this.listaNombres.length);
-    return this.listaNombres[random];
+    return this.listaNombres[getPosRandom()];
   }
   public int getEdadeRandom(){
     return (int )(Math.random() * 75 + 1);
