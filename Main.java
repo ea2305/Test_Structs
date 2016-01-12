@@ -5,6 +5,7 @@
 
 import structs.double_list.*;//Uncoment after put one struct in package
 import structs.arregloParalelo.*;
+import structs.arbol.*;
 import java.util.Scanner;
 
 //Probando GitHub desde Ubuntu
