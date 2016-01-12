@@ -5,7 +5,7 @@
 
 import structs.double_list.*;//Uncoment after put one struct in package
 import java.util.Scanner;
-//Probando GitHub
+//Probando GitHub desde Ubuntu
 public class Main{
 
     //Callback
