@@ -17,7 +17,7 @@ public class Main{
     public static void main(String []argv){
 
         //Some inputs for test
-        String [] input = {"A","B","C"",D","E",
+        String [] input = {"A","B","C","D","E",
                             "F","G","H","I","J",
                             "K","L","M","N","O",
                             "P","Q","R","S","T",
@@ -40,10 +40,11 @@ public class Main{
      * Struct : Stack
      * put your code here to test this struct
      */
-     public static void testStack(){}
+     public static void testStack(){
 
-		Pila_Demo pila=new Pila_Demo();
-		pila.mostrarOpciones();
+	Pila_Demo pila=new Pila_Demo();
+	pila.mostrarOpciones();
+    }
 
      public static void testSimple_LinkedList(){}
 
