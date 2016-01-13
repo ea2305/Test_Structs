@@ -25,7 +25,7 @@ public class Pila_Demo{
          while(select != -1){//Close when option is breaked
 
             select = 0;
-            System.out.println("\n\t*************[ MENU PRINCIPAL ]****************");
+            System.out.println("\n\t*************[ MENU PILA ]****************");
 
             for(String element:options)
                 System.out.println(element);

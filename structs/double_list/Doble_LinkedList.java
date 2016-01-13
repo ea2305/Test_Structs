@@ -55,7 +55,7 @@ public class Doble_LinkedList<T extends Comparable<T>>{
         listCount++;// incrementamos el contador de nodos
     }
 
-    // Regresa el nodo en la posición indicada por index
+    // Regresa el nodo en la posicion indicada por index
     public Node<T> get(int index){
         Node<T> Current;
 
@@ -72,7 +72,7 @@ public class Doble_LinkedList<T extends Comparable<T>>{
         return Current;
     }
 
-    // Regresa el nodo en la posición indicada por index
+    // Regresa el nodo en la posicion indicada por index
     public Node<T> getInverse(int index){
 
         if (index > size())
@@ -89,7 +89,7 @@ public class Doble_LinkedList<T extends Comparable<T>>{
 
     }
 
-    // remueve el elemento en la posición indicada
+    // remueve el elemento en la posicion indicada
     public boolean remove(int index){
         
         //Verificamos los rangos de busqueda
@@ -114,7 +114,7 @@ public class Doble_LinkedList<T extends Comparable<T>>{
         return true;
     }
 
-    // agrega el elemento en la posición indicada
+    // agrega el elemento en la posicion indicada
     public boolean addPos(int index, T data){
         //
         if (index < 1 )
@@ -139,7 +139,7 @@ public class Doble_LinkedList<T extends Comparable<T>>{
         return true;
     }
 
-    // agrega el elemento en la posición indicada
+    // agrega el elemento en la posicion indicada
     //Ordenacion de menor a mayor para clases genericas con
     //Implentacion de Comparable
     public boolean addOrdenado(T data){
