@@ -20,7 +20,7 @@ public class ArbolPrueba{
     private static String pedirPregunta(String option1, String option2) {
 
         return Read.line("\n"
-                + "Escribe una afirmación que sea verdad para un (una) "
+                + "Escribe una afirmacion que sea verdad para un (una) "
                 + option1 + "\n" + "pero que sea falsa para un (una) "
                 + option2 + "\n" + ": "
         );

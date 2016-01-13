@@ -29,7 +29,7 @@ public class ListaSimple<T>{
     }
  
      public Node get(int index)
-    // Regresa el nodo en la posición indicada por index
+    // Regresa el nodo en la posicion indicada por index
     {
         if (index <= 0)
             return null;
@@ -44,7 +44,7 @@ public class ListaSimple<T>{
     }
  
     public boolean remove(int index)
-    // remueve el elemento en la posición indicada
+    // remueve el elemento en la posicion indicada
     {
         // 
         if (index < 1 || index > size())
@@ -61,7 +61,7 @@ public class ListaSimple<T>{
     }
 
     public <T extends Comparable<T>> boolean addPos(int index, T data)
-    // agrega el elemento en la posición indicada
+    // agrega el elemento en la posicion indicada
     {
         //
         if (index < 1 )
@@ -83,7 +83,7 @@ public class ListaSimple<T>{
 
 
 public <T extends Comparable<T>> boolean addOrdenado(T data)
-    // agrega el elemento en la posición indicada
+    // agrega el elemento en la posicion indicada
     {
         
         Node Current = head;
