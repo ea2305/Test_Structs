@@ -46,7 +46,37 @@ public class Main{
 	pila.mostrarOpciones();
     }
 
-     public static void testSimple_LinkedList(){}
+     public static void testSimple_LinkedList(){
+        ListaSimple<String> lista_simple = new ListaSimple<>();
+       
+        System.out.println("\n\t***[ PRUEBAS DE LISTA DOBLEMENTE ENLAZADA ]***\n");
+
+        System.out.println("\tContenido sin datos, Incial : " + lista_simple.size() + "\n");
+        
+        System.out.println(">> Carga de Elemetos a la lista enlazada\n");
+        for(String elements: input){
+            System.out.print("[" + elements + "]<=>");
+            lista_simple.add(elements);
+        }
+        
+        System.out.println("\n\n\tContenido con datos cargados, Final: " + lista_simple.size());;
+
+
+        //add in position
+        System.out.println("\n***Agregamos elemento en la segunda posicion");
+        lista_simple.addPos(2,"Elemento agregado <- en posicion 2");
+        
+
+        //remove in position
+        System.out.println("\n***Removemos elemento en la segunda posicion");
+        lista_simple.remove(2);
+     
+        //Search test
+        System.out.println("\nPrueba de busqueda de elementos en la lista");
+        System.out.print("\n>Busqueda del 8vo elemento  : " + lista_simple.get(8).getData());
+        System.out.print("\n>Busqueda del 10mo elemento : " + lista_simple.get(10).getData());
+        System.out.print("\n>Busqueda del 3vo elemento  : " + lista_simple.get(3).getData() + "\n\n");
+     }
 
      /**
      * Struct : Doble linked list
