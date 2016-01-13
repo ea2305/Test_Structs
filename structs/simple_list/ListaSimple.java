@@ -96,8 +96,15 @@ public <T extends Comparable<T>> boolean addOrdenado(T data)
         }
         return addPos(a,data1);
     }
-
-
+    
+    //Imprimir todos los datos de manera descedente
+    public void listUp(){
+        Node<T> Current = head.getNext();
+        while (Current != null) {
+            System.out.println("Elementos : " + Current.getData());
+            Current = Current.getNext();
+        }
+    }
  
     public int size()
     // returns the number of elements in this list.

@@ -56,7 +56,7 @@ public class Main{
         
         System.out.println(">> Carga de Elemetos a la lista enlazada\n");
         for(String elements: input){
-            System.out.print("[" + elements + "]<=>");
+            System.out.print("[" + elements + "] =>");
             lista_simple.add(elements);
         }
         
@@ -66,11 +66,13 @@ public class Main{
         //add in position
         System.out.println("\n***Agregamos elemento en la segunda posicion");
         lista_simple.addPos(2,"Elemento agregado <- en posicion 2");
+        lista_simple.listUp();
         
 
         //remove in position
         System.out.println("\n***Removemos elemento en la segunda posicion");
         lista_simple.remove(2);
+        lista_simple.listUp();
      
         //Search test
         System.out.println("\nPrueba de busqueda de elementos en la lista");
