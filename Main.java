@@ -3,6 +3,7 @@
  * Test your code in this class
  */
 
+import structs.Pila.*;
 import structs.double_list.*;//Uncoment after put one struct in package
 import structs.arregloParalelo.*;
 import structs.arbol.*;
@@ -16,7 +17,7 @@ public class Main{
     public static void main(String []argv){
 
         //Some inputs for test
-        String [] input = {"A","B","C","D","E",
+        String [] input = {"A","B","C"",D","E",
                             "F","G","H","I","J",
                             "K","L","M","N","O",
                             "P","Q","R","S","T",
@@ -41,10 +42,9 @@ public class Main{
      */
      public static void testStack(){}
 
-     /**
-     * Struct : Simple Linked List
-     * put your code here to test this struct
-     */
+		Pila_Demo pila=new Pila_Demo();
+		pila.mostrarOpciones();
+
      public static void testSimple_LinkedList(){}
 
      /**
