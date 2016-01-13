@@ -141,6 +141,18 @@ public class Main{
       ap.visualizar();
     }
 
+    private static void creditos(){
+        System.out.println("\n\n");
+        System.out.println("...Universidad Politecnica de Chiapas...");
+        System.out.println("......Estructura de Datos Avanzada......");
+        System.out.println("-------------Integrantes----------------\n");
+        System.out.println("Carlos Maximiliano Ortiz Escobar 143406");
+        System.out.println("Elihu Alejandro Cruz Albores 143403");
+        System.out.println("Luis Angel Farelo Toledo 143404");
+        System.out.println("Luis Antonio Alcocer Dominguez 143513");
+        System.out.println("Julio de Buen Hernandez 143460");
+    }
+
     /**
      * Struct : Binary Tree
      * put your code here to test this struct
@@ -156,7 +168,8 @@ public class Main{
          Scanner read = new Scanner(System.in);
          String [] options = {"1.-Cola","2.-Pila","3.-Lista Simple",
                               "4.-Lista Doblemente Enlazada","5.-Arreglo Paralelo",
-                              "6.-Arbol Binario","[7...10).-Salir"};
+                              "6.-Arbol Binario",
+                              "7.- Creditos","[8...10).-Salir"};
 
          while(select != -1){//Close when option is breaked
 
@@ -186,6 +199,9 @@ public class Main{
                         break;
                     case 6:
                         testBinaryTree();
+                        break;
+                    case 7:
+                        creditos();
                         break;
                     default:
                         select = -1;
