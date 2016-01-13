@@ -5,6 +5,7 @@
 
 import structs.Pila.*;
 import structs.double_list.*;//Uncoment after put one struct in package
+import structs.simple_list.*;
 import structs.arregloParalelo.*;
 import structs.arbol.*;
 import java.util.Scanner;
@@ -46,7 +47,7 @@ public class Main{
 	pila.mostrarOpciones();
     }
 
-     public static void testSimple_LinkedList(){
+     public static void testSimple_LinkedList(String [] input){
         ListaSimple<String> lista_simple = new ListaSimple<>();
        
         System.out.println("\n\t***[ PRUEBAS DE LISTA DOBLEMENTE ENLAZADA ]***\n");
@@ -173,7 +174,7 @@ public class Main{
                         testStack();
                         break;
                     case 3:
-                        testSimple_LinkedList();
+                        testSimple_LinkedList(input);
                         break;
                     case 4:
                         testDouble_LinkedList(input);
