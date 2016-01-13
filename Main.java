@@ -7,6 +7,7 @@ import structs.Pila.*;
 import structs.double_list.*;//Uncoment after put one struct in package
 import structs.simple_list.*;
 import structs.arregloParalelo.*;
+import structs.queue.*;
 import structs.arbol.*;
 import java.util.Scanner;
 
@@ -35,7 +36,26 @@ public class Main{
      * Struct : Queue
      * put your code here to test this struct
      */
-     public static void testQueue(){}
+     public static void testQueue()throws Exception{
+         System.out.println("\n***** [ PRUEBA DE COLA ] ****\n");
+         Queue cola = new Queue();
+         System.out.println(">Primer elemento encolado : Primer elemento\n");
+         cola.enqueue("Primer elemento");
+         System.out.println(">Segundo elemento encolado : Segundo elemento\n");
+         cola.enqueue("Segundo elemento");
+         System.out.println(">Tercer elemento encolado : Tercer elemento\n");
+         cola.enqueue("Tercer elemento");
+         
+         System.out.println("\n***** vemos el elemento en la proximo a salir ****\n");
+         System.out.println("Peek : " + cola.peek());
+         
+         System.out.println("\n***** quitamos elementos de la cola ****\n");
+         
+         System.out.println(">Quitamos :  " + cola.dequeue());
+         System.out.println(">Quitamos :  " + cola.dequeue());
+         System.out.println(">Quitamos :  " + cola.dequeue());
+         
+     }
 
      /**
      * Struct : Stack
