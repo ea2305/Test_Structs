@@ -20,7 +20,7 @@ public class Pila_Demo{
          String [] options = {"1.-Agregar un elemento a la Pila",
          						"2.-Visualizar el elemento en la cima de la Pila",
          						"3.-Eliminar el elemento en la cima de la Pila",
-                            	"4.-Visualizar la pila completa"};
+                            	"4.-Visualizar la pila completa","[5-9].-Salir"};
 
          while(select != -1){//Close when option is breaked
 
